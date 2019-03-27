@@ -1,0 +1,29 @@
+body {
+    background: #E6E6E6;
+}
+
+.content {
+    margin: 5%;
+}
+
+.dictionary-item {
+    list-style: none;
+    width: 50%;
+    margin: 15px;
+    padding: 15px;
+    background: #A0D9E1;
+    border-radius: 5px;
+}
+
+.dictionary-item:hover {
+    background-color: #D1F9FF;
+    cursor: pointer;
+}
+
+button {
+    margin: 10px 0px;
+}
+
+input {
+    margin: 10px 0px 0px 0px;
+}
