@@ -17,6 +17,22 @@ $(document).ready(function() {
     false
   );
 
+  document.addEventListener(
+    "touchend",
+    function() {
+      console.log("successful");
+      var highlightedText = getSelectionText();
+      if (highlightedText.length > 0) {
+        // check there's some text selected
+        word = highlightedText.toLowerCase();
+        dictionarySearch();
+        console.log(highlightedText); // logs whatever textual content the user has selected on the page
+      }
+    },
+    false
+  );
+
+  // Save button click event
   $("#save-passage").on("click", function() {
     var item = {
       title: $title.val(),
@@ -36,6 +52,7 @@ $(document).ready(function() {
     });
   });
 
+  // Grabs selected text
   function getSelectionText() {
     var selectedText = "";
     if (window.getSelection) {
@@ -45,6 +62,7 @@ $(document).ready(function() {
     return selectedText;
   }
 
+  // API request dictionary search
   function dictionarySearch() {
     $data_paragraph.html("");
     let url =

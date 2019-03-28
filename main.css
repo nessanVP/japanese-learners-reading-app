@@ -9,7 +9,7 @@ body {
 .dictionary-item {
     list-style: none;
     width: 50%;
-    margin: 15px;
+    margin: 15px 0px;
     padding: 15px;
     background: #A0D9E1;
     border-radius: 5px;
@@ -27,3 +27,14 @@ button {
 input {
     margin: 10px 0px 0px 0px;
 }
+
+@media (max-width: 600px) {
+    .dictionary-item {
+        list-style: none;
+        width: 95%;
+        margin: 15px 0px;
+        padding: 15px;
+        background: #A0D9E1;
+        border-radius: 5px;
+    }
+  }
