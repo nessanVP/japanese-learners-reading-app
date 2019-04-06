@@ -15,8 +15,13 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <script src="./../main.js"></script>
-    <link rel="stylesheet" type="text/css" media="screen" href="./../main.css" />
+    <script src="./../../main.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./../../main.css"
+    />
   </head>
   <body>
     <!-- NAVBAR MAIN-->
@@ -33,23 +38,23 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="./../">HyperLearning</a>
+          <a class="active navbar-brand" href="./../../">HyperLearning</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
-            <li><a href="#">About</a></li>
-            <li class="active"><a href="#">Reading</a></li>
-            <li><a href="#">Word List</a></li>
-            <li><a href="#">Saved Passages</a></li>
+            <li><a href="./../about/">About</a></li>
+            <li><a href="./../reading/">Reading</a></li>
+            <li><a href="./../word-list/">Word List</a></li>
+            <li><a href="./../saved-passages/">Saved Passages</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <a href="#"
+              <a href="./../sign-up/"
                 ><span class="glyphicon glyphicon-user"></span> Sign Up</a
               >
             </li>
             <li>
-              <a href="./../login"
+              <a href="./../login/"
                 ><span class="glyphicon glyphicon-log-in"></span> Login</a
               >
             </li>
@@ -61,7 +66,11 @@
       <!-- MAIN PAGE-->
       <h2>Reading |　読書</h2>
       <!--Write instructions here-->
-      <p>Copy and paste your reading here. When a word is highlighted it will be searched in the dictionary. Click a dictionary termt to add it to your word list!</p>
+      <p>
+        Copy and paste your reading here. When a word is highlighted it will be
+        searched in the dictionary. Click a dictionary termt to add it to your
+        word list!
+      </p>
       <!--Reading Form-->
       <div class="form-group">
         <label for="reading">Reading:</label>
@@ -71,8 +80,10 @@
           id="passage"
           placeholder="Paste reading here..."
         ></textarea>
-        <input class="form-control" id="title" placeholder="Title"/>
-        <button type="submit" class="btn btn-default" id="save-passage">Save</button>
+        <input class="form-control" id="title" placeholder="Title" />
+        <button type="submit" class="btn btn-default" id="save-passage">
+          Save
+        </button>
       </div>
       <!--Dictionary Add New Words-->
       <h2>Dictionary Results</h2>

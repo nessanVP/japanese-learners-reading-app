@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Page Title</title>
+    <title>Reading | 読書</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
@@ -15,8 +15,13 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" media="screen" href="./../main.css" />
-    <script src="./../main.js"></script>
+    <script src="./../../main.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./../../main.css"
+    />
   </head>
   <body>
     <!-- NAVBAR MAIN-->
@@ -33,23 +38,23 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">HyperLearning</a>
+          <a class="active navbar-brand" href="./../../">HyperLearning</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="./../reading">Reading</a></li>
-            <li><a href="#">Word List</a></li>
-            <li><a href="#">Anki</a></li>
+            <li><a href="./../about/">About</a></li>
+            <li><a href="./../reading/">Reading</a></li>
+            <li><a href="./../word-list/">Word List</a></li>
+            <li><a href="./../saved-passages/">Saved Passages</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <a href="#"
+              <a href="./../sign-up/"
                 ><span class="glyphicon glyphicon-user"></span> Sign Up</a
               >
             </li>
             <li>
-              <a href="#"
+              <a href="./../login/"
                 ><span class="glyphicon glyphicon-log-in"></span> Login</a
               >
             </li>
@@ -58,21 +63,17 @@
       </div>
     </nav>
     <div class="content">
-      <!--Login-->
-      <form action="/action_page.php">
-        <div class="form-group">
-          <label for="email">Email address:</label>
-          <input type="email" class="form-control" id="email" />
-        </div>
-        <div class="form-group">
-          <label for="pwd">Password:</label>
-          <input type="password" class="form-control" id="pwd" />
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" /> Remember me</label>
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
+      <!-- MAIN PAGE-->
+      <h2>Passages</h2>
+      <!--Write instructions here-->
+      <p>Edit, delete, open and/or review saved passages.</p>
+      <div id="passages-list">
+        <ul>
+          <li id="passage-list-item" class="list-item">
+            You currently have no saved passages.
+          </li>
+        </ul>
+      </div>
     </div>
   </body>
 </html>

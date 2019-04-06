@@ -76,7 +76,7 @@ $(document).ready(function() {
         console.log(res);
         $.each(res.data, function(i, item) {
           $data_paragraph.append(
-            "<li id='dictionary-item' class='dictionary-item'>" +
+            "<li id='dictionary-list-item' class='list-item'>" +
               JSON.stringify(item.senses[0].english_definitions) +
               " " +
               JSON.stringify(item.japanese[0].word) +

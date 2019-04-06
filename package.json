@@ -1,0 +1,20 @@
+{
+  "name": "reading-app",
+  "version": "1.0.0",
+  "description": "A project I am working on to both help improve my programming and Japanese skills. This web app will be used to help me read, look up and learn new words more quickly and efficiently",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nessanVP/japanese_learners_reading_app.git"
+  },
+  "keywords": [],
+  "author": "Vanessa Pacheco",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nessanVP/japanese_learners_reading_app/issues"
+  },
+  "homepage": "https://github.com/nessanVP/japanese_learners_reading_app#readme"
+}
